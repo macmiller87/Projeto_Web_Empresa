@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Registro - ABC Tecnologia</title>
+</head>
+<body>
+    <h1>Registro de Candidatos</h1>
+    <div class="container borda">
+        <form>
+            <div>
+                <label for="nome">Nome:</label>
+                <div>
+                    <input type="text" id="nome" name="nome" required="required" autofocus="autofocus"/>
+                </div>
+            </div>
+            <div>
+                <label for="data">Data de Nascimento</label>
+                <div>
+                    <input type="date" id="data" name="data" required="required"/>
+                </div>
+            </div>
+            <div>
+                <label for="genero">Genero:</label>
+                <div>
+                    <fieldset>
+                        <legend>Opções de manifestação de genero:</legend>
+                        <input type="radio" id="masculino" name="genero" value="masculino"/>Masculino<br/>
+                        <input type="radio" id="feminino" name="genero" value="feminino"/>Feminino<br/>
+                        <input type="radio" id="pni" name="genero" value="pni"/>Prefiro não informar<br/>
+                    </fieldset>
+                </div>
+            </div>
+            <div>
+                <label for="telefone">Telefone</label>
+                <div>
+                    <input type="tel" id="telefone" name="telefone" required="required"/>
+                </div>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <div>
+                    <input type="email" id="email" name="email" required="required"/>
+                </div>
+            </div>
+            <div>
+                <label for="vaga">Vaga Desejada:</label>
+                <div>
+                    <input type="radio" id="desenv" name="tipo" value="desenv" checked="checked"/>Desenvolvimento
+                    <input type="radio" id="negocio" name="tipo" value="negocio"/>Negócios
+                </div>
+                <div>
+                    <select name="vaga" id="vaga">
+                    </select>  
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="incluir" id="incluirButton"/>
+            </div>
+        </form>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../js/validacao_registro.js"></script>
+    <script src="../js/listaVagas.js"></script>
+    <script src="../js/cadastro.js"></script>
+</body>
+</html>

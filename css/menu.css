@@ -1,0 +1,64 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #003264;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #dfdfdf;
+    color: #003264;
+}
+
+.menu li.icon{
+    display: none;
+}
+
+@media(max-width: 760px) {
+
+    .menu li:not(:first-child) {
+        display: none;
+    }
+
+    .menu li.icon{
+        float: right;
+        display: block;
+    }
+
+    .menu.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .menu.responsive li {
+        float: none;
+        display: inline;
+    }
+
+    .menu.responsive li a {
+        display: block;
+        text-align: left;
+    }
+
+}

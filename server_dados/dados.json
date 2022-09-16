@@ -1,0 +1,45 @@
+{
+  "vagas": [
+    {
+      "id": 1,
+      "titulo": "Programador Java Pleno",
+      "tipo": "1"
+    },
+    {
+      "id": 2,
+      "titulo": "Analista Comercial",
+      "tipo": "2"
+    },
+    {
+      "id": 3,
+      "titulo": "Instrutor Excel Avançado",
+      "tipo": "1"
+    },
+    {
+      "id": 4,
+      "titulo": "Gerente de Projetos para .NET",
+      "tipo": "2"
+    },
+    {
+      "id": 5,
+      "titulo": "Consultor de Desenvolvimento Agil",
+      "tipo": "2"
+    },
+    {
+      "id": 6,
+      "titulo": "Programador VB.Net",
+      "tipo": "1"
+    }
+  ],
+  "candidatos": [
+    {
+      "nome": "Macmiller Duarte ",
+      "data": "1987-01-30",
+      "genero": "masculino",
+      "telefone": "5737597359",
+      "email": "teste@email.com",
+      "vaga": "Programador Java Pleno",
+      "id": 1
+    }
+  ]
+}

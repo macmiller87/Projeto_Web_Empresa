@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu" id="menuTopo">
+                <li><a href="#">A Empresa</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Localização</a></li>
+                <li><a href="paginas/registro.html">Trabalhe Conosco</a></li>
+                <li><a href="paginas/listaCandidatos.html">Lista de Candidatos</a></li>
+                <li class="icon">
+                    <a onclick="mostrarMenu()">
+                        &#9776;
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="intro"></div>
+    <div class="container">
+        <section>
+            <article>
+                <header>
+                    <h2>Conheça-nos um pouco</h2>
+                    <p>
+                        Desde sua fundação a ABC Tecnologia é uma empresa com foco na elaboração de soluções visando agilizar os processos relativos às tarefas de seus clientes. <br/>
+                        A agilidade, redução de custos e satisfação dos nossos clientes é nossa maior meta.
+                    </p>
+                </header>
+            </article>
+        </section>
+        <aside>
+            <h2>Depoimentos dos clientes</h2>
+            <p>Excelente qualidade, ótimos profissionais.</p>
+            <p>Estava buscando uma solução para minha clínica
+                e a ABC nos desenvolveu um sistema sob medida,
+                cujos resultados superaram nossas expectativas.
+            </p>
+        </aside>
+    </div>
+    <footer>
+        <p>Copyright 2022 - Todos os direitos reservados</p>
+    </footer>
+    <script type="text/javascript">
+        function mostrarMenu() {
+
+            let elemento = document.getElementById("menuTopo");
+
+            if(elemento.className === "menu") {
+                elemento.className += " responsive";
+
+            }else {
+                elemento.className = "menu";
+            }
+        }
+    </script>
+</body>
+</html>
